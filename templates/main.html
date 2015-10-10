@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        body {
+        margin:0;
+        padding:0.5em 0.5em;
+        font-family:Arial;
+        background:#dddee0;
+        }
+    </style>
+</head>
+<body>
+<div id="data"></div>
+<script type="text/javascript">
+    var czas = new Date();
+    var dni = new Array("Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota");
+    var miesiace = new Array("stycznia", "lutego","marca","kwietnia","maja","czerwca","lipca","sierpnia","września","października","listopada","grudnia");
+    document.getElementById('data').innerHTML = dni[czas.getDay()] + ", " + czas.getDate() + " " + miesiace[czas.getMonth()] + " " + czas.getFullYear();
+</script>
+    {{body}}
+</body>
+</html>

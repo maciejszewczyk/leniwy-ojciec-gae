@@ -1,0 +1,5 @@
+cron:
+- description: get menu from kindergarten
+  url: /update
+  schedule: every 1 hours from 06:00 to 18:00
+  timezone: Europe/Warsaw
